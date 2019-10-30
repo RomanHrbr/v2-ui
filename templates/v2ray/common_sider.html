@@ -3,45 +3,45 @@
             @click="({key}) => key.startsWith('http') ? window.open(key) : location.href = key">
         <a-menu-item key="{{ url_for('v2ray.index') }}">
             <a-icon type="dashboard"></a-icon>
-            <span>{{ _('system status') }}</span>
+            <span>{{ _('estado del sistema') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.accounts') }}">
             <a-icon type="user"></a-icon>
-            <span>{{ _('accounts') }}</span>
+            <span>{{ _('cuentas') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.setting') }}">
             <a-icon type="setting"></a-icon>
-            <span>{{ _('panel settings') }}</span>
+            <span>{{ _('configuración del panel') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.clients') }}">
             <a-icon type="laptop"></a-icon>
-            <span>{{ _('clients') }}</span>
+            <span>{{ _('aplicaciones') }}</span>
         </a-menu-item>
         <a-sub-menu>
             <template slot="title">
                 <a-icon type="link"></a-icon>
-                <span>{{ _('other') }}</span>
+                <span>{{ _('otro') }}</span>
             </template>
-            <a-menu-item key="https://github.com/sprov065/v2-ui/">
-                <a-icon type="github"></a-icon>
-                <span>Github</span>
+            <a-menu-item key="https://t.me/joinchat/JIwttFOxPWaQ7C_ryVwYYQ">
+                <a-icon type="like"></a-icon>
+                <span>Telegram Grupo</span>
             </a-menu-item>
-            <a-menu-item key="https://github.com/sprov065/v2-ui/issues">
+            <a-menu-item key="https://t.me/dankelthaher">
                 <a-icon type="exception"></a-icon>
-                <span>{{ _('report issue') }}</span>
+                <span>{{ _('informar un problema') }}</span>
             </a-menu-item>
             <a-menu-item key="{{ url_for('v2ray.tutorial') }}">
                 <a-icon type="read"></a-icon>
-                <span>{{ _('tutorial') }}</span>
+                <span>{{ _('tutoriales') }}</span>
             </a-menu-item>
         </a-sub-menu>
         <a-menu-item key="https://www.paypal.me/romanherbert94">
             <a-icon type="like"></a-icon>
-            <span>{{ _('donate') }}</span>
+            <span>{{ _('donar') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('base.logout') }}">
             <a-icon type="logout"></a-icon>
-            <span>{{ _('logout') }}</span>
+            <span>{{ _('cerrar sesión') }}</span>
         </a-menu-item>
     </a-menu>
 </a-layout-sider>
@@ -55,45 +55,45 @@
         @click="({key}) => key.startsWith('http') ? window.open(key) : location.href = key">
         <a-menu-item key="{{ url_for('v2ray.index') }}">
             <a-icon type="dashboard"></a-icon>
-            <span>{{ _('system status') }}</span>
+            <span>{{ _('estado del sistema') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.accounts') }}">
             <a-icon type="user"></a-icon>
-            <span>{{ _('accounts') }}</span>
+            <span>{{ _('cuentas') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.setting') }}">
             <a-icon type="setting"></a-icon>
-            <span>{{ _('panel settings') }}</span>
+            <span>{{ _('configuración del panel') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('v2ray.clients') }}">
             <a-icon type="laptop"></a-icon>
-            <span>{{ _('clients') }}</span>
+            <span>{{ _('aplicaciones') }}</span>
         </a-menu-item>
         <a-sub-menu>
             <template slot="title">
                 <a-icon type="link"></a-icon>
-                <span>{{ _('other') }}</span>
+                <span>{{ _('otro') }}</span>
             </template>
-            <a-menu-item key="https://github.com/sprov065/v2-ui/">
-                <a-icon type="github"></a-icon>
-                <span>Github</span>
+            <a-menu-item key="https://t.me/joinchat/JIwttFOxPWaQ7C_ryVwYYQ">
+                <a-icon type="like"></a-icon>
+                <span>Telegram Grupo</span>
             </a-menu-item>
-            <a-menu-item key="https://github.com/sprov065/v2-ui/issues">
+            <a-menu-item key="https://t.me/dankelthaher">
                 <a-icon type="exception"></a-icon>
-                <span>{{ _('report issue') }}</span>
+                <span>{{ _('informar un problema') }}</span>
             </a-menu-item>
             <a-menu-item key="{{ url_for('v2ray.tutorial') }}">
                 <a-icon type="read"></a-icon>
-                <span>{{ _('tutorial') }}</span>
+                <span>{{ _('tutoriales') }}</span>
             </a-menu-item>
         </a-sub-menu>
-        <a-menu-item key="https://blog.sprov.xyz/go/support-paypal">
+        <a-menu-item key="https://www.paypal.me/romanherbert94">
             <a-icon type="like"></a-icon>
-            <span>{{ _('donate') }}</span>
+            <span>{{ _('donar') }}</span>
         </a-menu-item>
         <a-menu-item key="{{ url_for('base.logout') }}">
             <a-icon type="logout"></a-icon>
-            <span>{{ _('logout') }}</span>
+            <span>{{ _(''cerrar sesión') }}</span>
         </a-menu-item>
     </a-menu>
 </a-drawer>
