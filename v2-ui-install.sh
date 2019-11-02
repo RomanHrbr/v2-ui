@@ -92,6 +92,9 @@ install_v2-ui() {
     if [[ -e /usr/local/v2-ui/ ]]; then
         rm /usr/local/v2-ui/ -rf
     fi
+    if [[ -e /usr/local/v2-ui/ ]]; then
+        mkdir /usr/local/v2-ui/ -rf
+    fi
     #sudo mkdir /usr/local/v2-ui
     #last_version=$(curl -Ls "https://api.github.com/repos/sprov065/v2-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     #echo -e "Se detectó la última versión de v2ray-Panel：${last_version}，Comience la instalación"
@@ -102,8 +105,8 @@ install_v2-ui() {
     fi
     tar zxvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
-    #mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
-    #sudo rm - rf /usr/local/v2-ui-linux
+    mv /usr/local/v2-ui-linux/v2-ui/* /usr/local/v2-ui/
+    sudo rm - rf /usr/local/v2-ui-linux
     cd v2-ui
     chmod +x v2-ui
     cp -f v2-ui.service /etc/systemd/system/
