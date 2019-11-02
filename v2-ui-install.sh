@@ -102,6 +102,7 @@ install_v2-ui() {
     fi
     tar zxvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
+    mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
     cd v2-ui
     chmod +x v2-ui
     cp -f v2-ui.service /etc/systemd/system/
