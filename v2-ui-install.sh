@@ -114,7 +114,7 @@ install_v2-ui() {
     echo -e ""
     echo -e "Si se trata de un panel de actualización, acceda al panel como lo hizo anteriormente."
     echo -e ""
-    curl -o /usr/bin/v2-ui -Ls https://raw.githubusercontent.com/sprov065/v2-ui/master/v2-ui.sh
+    curl -o /usr/bin/v2-ui -Ls https://raw.githubusercontent.com/RomanHrbr/v2-ui/master/v2-ui.sh
     chmod +x /usr/bin/v2-ui
     echo -e "v2ray-panel Administrar el uso del script: "
     echo -e "------------------------------------------"
