@@ -100,6 +100,7 @@ install_v2-ui() {
     fi
     tar zxvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
+    mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
     if [[ -e /usr/local/v2-ui ]]; then
     echo ""
     else
