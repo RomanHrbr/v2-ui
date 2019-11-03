@@ -92,7 +92,7 @@ install_v2-ui() {
     if [[ -e /usr/local/v2-ui/ ]]; then
         rm /usr/local/v2-ui/ -rf
     fi
-    if [[ -e /etc/ger-frm ]]; then
+    if [[ -e /usr/local/v2-ui ]]; then
     echo "" 
     else
     sudo mkdir /usr/local/v2-ui
