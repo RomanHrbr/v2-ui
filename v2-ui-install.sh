@@ -62,7 +62,7 @@ install_base() {
 }
 
 install_v2ray() {
-    echo -e "${green}Comience a instalar o actualizar v2ray${plain}"
+    echo -e "${green}instalando v2ray${plain}"
     bash <(curl -L -s https://install.direct/go.sh)
     if [[ $? -ne 0 ]]; then
         echo -e "${red}La instalación o actualización de V2ray falló, verifique el mensaje de error${plain}"
@@ -101,7 +101,7 @@ install_v2-ui() {
     tar zxvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
     mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
-    sudo rm - rf /usr/local/v2-ui-linux
+    sudo rm -rf /usr/local/v2-ui-linux
     cd v2-ui
     chmod +x v2-ui
     cp -f v2-ui.service /etc/systemd/system/
@@ -133,7 +133,7 @@ install_v2-ui() {
     echo -e "------------------------------------------"
 }
 
-echo -e "${green}Comience la instalación${plain}"
+echo -e "${green}Comenzando la instalación${plain}"
 install_base
 install_v2ray
 install_v2-ui
