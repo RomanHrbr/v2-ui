@@ -89,9 +89,7 @@ close_firewall() {
 install_v2-ui() {
     systemctl stop v2-ui
     cd /usr/local/
-    if [[ -e /usr/local/v2-ui/ ]]; then
-        rm /usr/local/v2-ui/ -rf
-    fi
+    
     if [[ -e /usr/local/v2-ui ]]; then
     echo "" 
     else
