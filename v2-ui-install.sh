@@ -100,7 +100,11 @@ install_v2-ui() {
     fi
     tar zxvf v2-ui-linux.tar.gz
     rm v2-ui-linux.tar.gz -f
+    if [[ -e /usr/local/v2-ui ]]; then
+    echo ""
+    else
     mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
+    fi
     sudo rm -rf /usr/local/v2-ui-linux
     cd v2-ui
     chmod +x v2-ui
