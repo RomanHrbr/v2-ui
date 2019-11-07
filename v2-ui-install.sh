@@ -99,7 +99,7 @@ install_v2-ui() {
         exit 1
     fi
     tar zxvf v2-ui-linux.tar.gz
-    mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
+    #mv /usr/local/v2-ui-linux/* /usr/local/v2-ui/
     rm v2-ui-linux.tar.gz -f
     sudo rm -rf /usr/local/v2-ui-linux
     cd v2-ui
