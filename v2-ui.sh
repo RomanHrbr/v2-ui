@@ -111,7 +111,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://blog.sprov.xyz/v2-ui.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/RomanHrbr/v2-ui/master/v2-ui.sh)
     if [[ $? == 0 ]]; then
         echo -e "${green}La actualización se ha completado y el panel se ha reiniciado automáticamente.${plain}"
         exit
